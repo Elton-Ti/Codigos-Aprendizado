@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*9) Faça um programa que leia a altura e o peso de uma pessoa. De acordo com a tabela a seguir, verifique e mostre qual a classificação dessa pessoa.
+
+                                            Peso
+Altura                  até 60      Entre 60-90(inclusive)      Acima de 90
+Menor que 1,20             A                D                       G
+120 - 1,70                 B                E                       H
+maior que 1,70             C                F                       I           */
+
+
+float altura,peso;
+
+int main()
+{
+    printf("Qual sua altura: ");
+    scanf("%f",&altura);
+    printf("Qual seu Peso? ");
+    scanf(" %f",&peso);
+    if (altura<1.20 && peso<60){
+        printf("\nClasse A\n");
+        }else if (altura>=1.20 && altura<=1.70 && peso<60){
+            printf("\nClasse B\n");
+            }else if (altura>=1.71 && peso<60){
+                printf("\nClasse C\n");
+                }else if (altura<1.20 && peso>=60 && peso<=90){
+                    printf("\nClasse D\n");
+                    }else if (altura>=1.20 && altura<=1.70 && peso>=60 && peso<=90){
+                        printf("\nClasse E\n");
+                        }else if (altura>=1.71 && peso>=60 && peso<=90){
+                            printf("\nClasse F\n");
+                            }else if (altura<1.20 && peso>90){
+                                printf("\nClasse G\n");
+                                }else if (altura>=1.20 && altura<=1.70 && peso>90){
+                                    printf("\nClasse H\n");
+                                    }else if (altura>=1.71 && peso>90){
+                                        printf("\nClasse I\n");
+                                        }
+
+    return 0;
+}
