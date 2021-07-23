@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//8) Faça um programa que leia 10 inteiros e imprima sua média.
+
+int a,b,c,d,e,f,g,h,i,j;
+float N;
+
+int main()
+{
+    printf("Escreva 10 numeros inteiros:\n");
+    scanf("%i %i %i %i %i %i %i %i %i %i",&a,&b,&c,&d,&e,&f,&g,&h,&i,&j);
+    N = (a+b+c+d+e+f+g+h+i+j)/10;
+    printf("\n Media : %.1f\n",N);
+    return 0;
+}
