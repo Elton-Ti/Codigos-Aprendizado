@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//18) Faça um programa que receba um número inteiro maior do que 1 e verifique se o número fornecido é primo ou não.
+
+int num, i, resultado = 0;
+
+int main() {
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+  for (i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+       resultado++;
+       break;
+    }
+ }
+ if (resultado == 0)
+    printf("\n%d eh um numero primo\n", num);
+ else
+    printf("\n%d nao eh um numero primo\n", num);
+
+ return 0;
+}
