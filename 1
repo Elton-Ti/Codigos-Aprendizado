@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*10) Faça um programa que leia três números inteiros positivos e efetue o cálculo de uma das seguintes médias
+de acordo com um valor numérico digitado pelo usuário e mostrado na tabela a seguir:
+
+Numero digitado                Media
+    1                          Geometrica
+                               x*y*z
+
+    2                          Ponderada
+                               x+2*y+3*z / 6
+
+
+    3                          Harmonica
+                               1 / (1/x+1/y+1/z)
+
+    4                          Aritimética
+                               x+y+z/3              */
+
+int N,num1,num2,num3;
+float valor;
+
+int main()
+{
+    printf("Digite 3 numeros : \n");
+    scanf("%d %d %d",&num1,&num2,&num3);
+    printf("\nEscolha a operacao que quer fazer :\n [1] Geometrica\n [2] Ponderada\n [3] Harmonica\n [4] Aritimetica\n");
+    scanf(" %c",&N);
+    if (N=='1'){
+        valor=(num1*num2*num3);
+        printf("\n A media Geometrica dos numeros eh: %.2f\n",valor);
+        }else if (N=='2'){
+            valor=((num1+(2*num2)+(3*num3))/6);
+            printf("\n A media Ponderada dos numeros eh: %.2f\n",valor);
+            }else if (N=='3'){
+                valor=(1/((1/num1)+(1/num2)+(1/num3)));
+                printf("\n A media Harmonica dos numeros eh: %.2f\n",valor);
+                }else if (N=='4'){
+                    valor=((num1+num2+num3)/3);
+                    printf("\n A media Aritimetica dos numeros eh: %.2f\n",valor);
+                    }
+    return 0;
+}
