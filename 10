@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//2) Faça um programa que leia dois números e mostre o maior deles. Se, por acaso, os dois números forem iguais, imprima a mensagem “Números iguais”.
+
+int num1,num2;
+
+int main()
+{
+    printf("Digite 2 numeros :\n");
+    scanf("%i %i",&num1,&num2);
+    if(num1==num2){
+        printf("\n Os numeros sao iguais!!!\n");
+    }else
+        if(num1>num2)
+            printf("\no maior numero eh o: %i\n",num1);
+        if(num2>num1)
+            printf("\no maior numero eh o: %i\n",num2);
+    return 0;
+}
